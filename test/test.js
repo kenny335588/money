@@ -1,16 +1,16 @@
 var expect = require('chai').expect
 
-describe('jon', function () {
-  var jon = require('../lib/jon')
+describe('morse', function () {
+  var jon = require('../lib/morse')
 
-  describe('字元與ASCII碼轉換', function () {
-    it('twcn.convert(寫一個函數將該字串轉為簡體)', function () {
-      expect(twcn.convert('寫一個函數將該字串轉為簡體')).to.equal('写一个函数将该字串转为简体')
+  describe('字母轉摩斯電碼測試', function () {
+    it('morse.convert(寫一個函數將該字串轉為摩斯電碼)', function () {
+      expect(morse.convert('寫一個函數將該摩斯電碼轉為字串')).to.equal('')
     })
   })
-  describe('簡體轉繁體測試', function () {
-    it('twcn.iconvert(写一个函数将该字串转为简体)', function () {
-      expect(twcn.iconvert('写一个函数将该字串转为简体')).to.equal('寫一個函數將該字串轉為簡體')
+  describe('摩斯電碼轉字母測試', function () {
+    it('morse.iconvert(写一个函数将该字串转为简体)', function () {
+      expect(morse.iconvert('')).to.equal('寫一個函數將該摩斯電碼轉為字串')
     })
   })
 
